@@ -1,0 +1,35 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+@import "highlight.js/styles/atom-one-light.css";
+@import "github-markdown-css/github-markdown-light.css";
+@import "./markdown.scss";
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+[class*='icon-'],
+[class^='icon-'] {
+  font-family: iconfont !important;
+  font-size: 24px;
+  font-style: normal;
+  vertical-align: middle;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  font-size: 16px;
+}
+
+@media screen and (width <= 768px) {
+  html {
+    font-size: 16px; /* 移动端字体大小 */
+  }
+}
+
+:root {
+  --vs-color-bg-white: #fff;
+  --vs-color-bg-light: #f9f9fb;
+}
