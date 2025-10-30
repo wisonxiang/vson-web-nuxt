@@ -20,6 +20,7 @@ export default defineNuxtConfig({
         highlight: false,
       },
     },
+    experimental: { nativeSqlite: true },
   },
   fonts: {
     provider: "bunny",

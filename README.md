@@ -15,4 +15,11 @@ tar -cz -f  ./app.gzip ./.output
 -f 指定挡名
 
 解压命令
-tar -xz -f app.gzip`
+tar -xz -f app.gzip
+
+docker部署
+tar -cz -f  ./app.gzip ./.output .dockerignore Dockerfile ecosystem.config.cjs
+
+./unzip.sh
+docker build -t vson-web-nuxt:v1.x . 
+docker run --name nuxt -p 3005:3005 -d  vson-web-nuxt:v1.x
